@@ -1,0 +1,361 @@
+.main {
+    background-color: #0a0d15;
+    color: white;
+    margin: 2em 16%;
+    /* padding: 0em 16%; */
+    width: 84%;
+}
+
+a:link {
+    color: lightseagreen;
+}
+
+a:hover {
+    color: lightskyblue;
+}
+
+a:active {
+    color: goldenrod;
+}
+
+a:visited {
+    color: darkgoldenrod;
+}
+
+.iceland-regular {
+    font-family: "Iceland", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.wrapper {
+    margin: 10px 0;
+}
+
+.content-row {
+    margin: auto;
+    /* padding: .5em 2em; */
+    /* vertical-align: middle; */
+    align-items: center;
+    display: block;
+    width: 84%;
+}
+
+.container {
+    position: relative;
+    margin: auto;
+    padding: .5em 2em;
+    align-items: center;
+    align-content: center;
+    vertical-align: middle;
+    text-align: center;
+    display: inline-flex;
+    max-width: 84%;
+}
+
+.container2 {
+    position: relative;
+    /* margin: auto; */
+    padding: .5em 2em;
+    align-items: center;
+    align-content: center;
+    vertical-align: middle;
+    text-align: center;
+    display: flex;
+    max-width: 84%;
+}
+
+.text-center {
+    position: relative;
+    /* margin: auto; */
+    padding: 1em 0em;
+    align-items: center;
+    text-align: center;
+    display: block;
+    width: 84%;
+    font-size: large;
+}
+
+.logo-centered {
+    position: absolute;
+    transform: translate(130px, 168px);
+    font-family: "Iceland", sans-serif;
+    font-weight: 500;
+    font-size: 70px;
+    text-align: center;
+    letter-spacing: 25.5px;
+    text-shadow: 2px 3px 1px black;
+}
+
+.logo-bracket {
+    position: absolute;
+    font-family: "Iceland", sans-serif;
+    font-weight: 100;
+    font-size: 128px;
+    text-align: center;
+    text-shadow: 2px 3px 1px black;
+}
+
+.logo-bracket-l {
+    transform: translate(160px, 131px);
+}
+
+.logo-bracket-r {
+    transform: translate(824px, 131px);
+}
+
+.logo-hitman {
+    position: absolute;
+    transform: translate(368px, 126px);
+}
+
+.leader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+}
+
+.icon {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding-right: 1em;
+    padding-left: 3em;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #2196F3;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50px;
+}
+
+.toggle_radio {
+    position: relative;
+    background-color: #ccc;
+    margin: 4px auto;
+    overflow: hidden;
+    padding: 0 !important;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    position: relative;
+    height: 34px;
+    width: 728px;
+}
+
+.toggle_radio>* {
+    float: left;
+}
+
+.toggle_radio input[type=radio] {
+    display: none;
+    /*position: fixed;*/
+}
+
+.toggle_radio label {
+    font: 150% "Source Sans Pro";
+    font-weight: bolder;
+    /* color: rgba(255, 255, 255, .9) !important; */
+    z-index: 0;
+    display: block;
+    width: 97px;
+    height: 28px;
+    margin: 3px 3px;
+    -webkit-border-radius: 34px;
+    -moz-border-radius: 34px;
+    border-radius: 34px;
+    cursor: pointer;
+    z-index: 1;
+    /*background: rgba(0,0,0,.1);*/
+    text-align: center;
+    /*margin: 0 2px;*/
+    /*background: blue;*/
+    /*make it blue*/
+}
+
+.toggle_option_slider {
+    /*display: none;*/
+    /*background: red;*/
+    width: 100px;
+    height: 26px;
+    position: absolute;
+    top: 4px;
+    -webkit-border-radius: 34px;
+    -moz-border-radius: 34px;
+    border-radius: 34px;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
+.label_any {
+    color: white;
+    text-shadow: black 1px 0 10px;
+}
+
+.label_black {
+    color: #3d3d3d;
+    text-shadow: #676767 1px 0 10px;
+}
+
+.label_blonde {
+    color: #fed883;
+    text-shadow: black 1px 0 10px;
+}
+
+.label_brown {
+    color: #7f3201;
+    text-shadow: #014e7f 1px 0 10px;
+}
+
+.label_gray {
+    color: #808080;
+    text-shadow: white 1px 0 10px;
+}
+
+.label_red {
+    color: #ff6a01;
+    text-shadow: #0196ff 1px 0 10px;
+}
+
+.label_bald {
+    color: white;
+    text-shadow: black 1px 0 10px;
+}
+
+#any:checked~.toggle_option_slider {
+    background: white;
+    left: 4px;
+}
+
+#black:checked~.toggle_option_slider {
+    background: #3d3d3d;
+    left: 104px;
+}
+
+#blonde:checked~.toggle_option_slider {
+    background: #fed883;
+    left: 208px;
+}
+
+#brown:checked~.toggle_option_slider {
+    background: #7f3201;
+    left: 312px;
+}
+
+#gray:checked~.toggle_option_slider {
+    background: #808080;
+    left: 416px;
+}
+
+#red:checked~.toggle_option_slider {
+    background: #ff6a01;
+    left: 520px;
+}
+
+#bald:checked~.toggle_option_slider {
+    background: white;
+    left: 624px;
+}
+
+.justified-grid-gallery {
+    --space: 4px;
+    --min-height: 190px;
+}
+
+.justified-grid-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: var(--space);
+    list-style: none;
+    margin: 0 !important;
+    /* We use !important to avoid gaps in some environments. */
+    padding: 0 !important;
+    /* We use !important to avoid gaps in some environments. */
+}
+
+.justified-grid-gallery>* {
+    flex-grow: calc(var(--width) * (100000 / var(--height)));
+    flex-basis: calc(var(--min-height) * (var(--width) / var(--height)));
+    aspect-ratio: var(--width) / var(--height);
+    position: relative;
+    overflow: hidden;
+    margin: 0 !important;
+    /* We use !important to avoid gaps in some environments. */
+    padding: 0 !important;
+    /* We use !important to avoid gaps in some environments. */
+}
+
+.justified-grid-gallery>*>img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.justified-grid-gallery::after {
+    content: " ";
+    flex-grow: 1000000000;
+    background: var(--last-row-background);
+}

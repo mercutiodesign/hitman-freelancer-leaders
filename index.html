@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Hitman: World of Assassination Freelancer Leaders</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Iceland&display=swap" rel="stylesheet">
+</head>
+
+<body class="main" onload="update()">
+    <div class="content-row">
+        <div class="logo-bracket logo-bracket-l">[</div>
+        <div class="logo-bracket logo-bracket-r">]</div>
+        <div class="logo-centered">FREELANCER<br />LEADER FINDER</div>
+        <img src="images/hitman.png" class="logo-hitman" alt="Hitman Logo" width="288" height="50">
+        <img src="images/freelancer.jpeg" alt="Freelancer World Map" width="1024" height="416">
+    </div>
+    <div class="text-center">
+        Created based images by <a
+            href="https://www.reddit.com/r/HiTMAN/comments/1arlwol/freelancer_showdown_leader_identification_cheat/#lightbox">Riximilian
+            on Reddit</a>
+        <br/>
+        <br/>
+        This website neither collects nor stores any data, personal or otherwise.
+    </div>
+    <div class="container">
+        <img class="icon" src="images/earrings.png" alt="earrings" width="50" height="50">
+        <label class="switch">
+            <input type="checkbox" onchange="update()" id="earrings">
+            <span class="slider round"></span>
+        </label>
+    </div>
+    <div class="container">
+        <img class="icon" src="images/glasses.png" alt="glasses" width="50" height="50">
+        <label class="switch">
+            <input type="checkbox" onchange="update()" id="glasses">
+            <span class="slider round"></span>
+        </label>
+    </div>
+    <div class="container">
+        <img class="icon" src="images/hat.png" alt="hat" width="50" height="50">
+        <label class="switch">
+            <input type="checkbox" onchange="update()" id="hat">
+            <span class="slider round"></span>
+        </label>
+    </div>
+    <div class="container">
+        <img class="icon" src="images/necklace.png" alt="necklace" width="50" height="50">
+        <label class="switch">
+            <input type="checkbox" onchange="update()" id="necklace">
+            <span class="slider round"></span>
+        </label>
+    </div>
+    <div class="container">
+        <img class="icon" src="images/tattoo.png" alt="tattoo" width="50" height="50">
+        <label class="switch">
+            <input type="checkbox" onchange="update()" id="tattoo">
+            <span class="slider round"></span>
+        </label>
+    </div>
+    <div class="container">
+        <img class="icon" src="images/hair.png" alt="hair" width="50" height="50">
+        <div class="wrapper">
+            <div class="toggle_radio">
+                <input type="radio" onchange="update()" checked class="toggle_option" id="any" name="toggle_option">
+                <input type="radio" onchange="update()" class="toggle_option" id="black" name="toggle_option">
+                <input type="radio" onchange="update()" class="toggle_option" id="blonde" name="toggle_option">
+                <input type="radio" onchange="update()" class="toggle_option" id="brown" name="toggle_option">
+                <input type="radio" onchange="update()" class="toggle_option" id="gray" name="toggle_option">
+                <input type="radio" onchange="update()" class="toggle_option" id="red" name="toggle_option">
+                <input type="radio" onchange="update()" class="toggle_option" id="bald" name="toggle_option">
+                <label for="any" class="label_any">Any</label>
+                <label for="black" class="label_black">Black</label>
+                <label for="blonde" class="label_blonde">Blonde</label>
+                <label for="brown" class="label_brown">Brown</label>
+                <label for="gray" class="label_gray">Gray</label>
+                <label for="red" class="label_red">Red</label>
+                <label for="bald" class="label_bald">Bald</label>
+                <div class="toggle_option_slider">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container2">
+        <div class="wrapper">
+            <section class="justified-grid-gallery">
+                <img class="leader" src="images/leader-_0_0.png" data-earrings="true" data-glasses="true" data-hat="false"
+                    data-necklace="true" data-tattoo="true" data-hair="black" alt="">
+                <img class="leader" src="images/leader-_0_1.png" data-earrings="true" data-glasses="true" data-hat="false"
+                    data-necklace="true" data-tattoo="true" data-hair="black" alt="">
+                <img class="leader" src="images/leader-_0_2.png" data-earrings="true" data-glasses="true" data-hat="false"
+                    data-necklace="true" data-tattoo="true" data-hair="blonde" alt="">
+                <img class="leader" src="images/leader-_0_3.png" data-earrings="true" data-glasses="true" data-hat="false"
+                    data-necklace="true" data-tattoo="true" data-hair="blonde" alt="">
+                <img class="leader" src="images/leader-_0_4.png" data-earrings="true" data-glasses="true" data-hat="false"
+                    data-necklace="true" data-tattoo="true" data-hair="brown" alt="">
+                <img class="leader" src="images/leader-_0_5.png" data-earrings="true" data-glasses="true" data-hat="false"
+                    data-necklace="true" data-tattoo="true" data-hair="brown" alt="">
+                <img class="leader" src="images/leader-_0_6.png" data-earrings="true" data-glasses="true" data-hat="false"
+                    data-necklace="true" data-tattoo="true" data-hair="gray" alt="">
+                <img class="leader" src="images/leader-_0_7.png" data-earrings="true" data-glasses="true" data-hat="false"
+                    data-necklace="true" data-tattoo="true" data-hair="gray" alt="">
+                <img class="leader" src="images/leader-_0_8.png" data-earrings="true" data-glasses="true" data-hat="false"
+                    data-necklace="true" data-tattoo="true" data-hair="bald" alt="">
+                <img class="leader" src="images/leader-_0_9.png" data-earrings="true" data-glasses="true" data-hat="false"
+                    data-necklace="true" data-tattoo="true" data-hair="bald" alt="">
+                <img class="leader" src="images/leader-_0_10.png" data-earrings="true" data-glasses="true" data-hat="false"
+                    data-necklace="true" data-tattoo="true" data-hair="red" alt="">
+                <img class="leader" src="images/leader-_0_11.png" data-earrings="true" data-glasses="true" data-hat="false"
+                    data-necklace="true" data-tattoo="true" data-hair="red" alt="">
+
+                <img class="leader" src="images/leader-_1_0.png" data-earrings="true" data-glasses="false" data-hat="true"
+                    data-necklace="true" data-tattoo="false" data-hair="black" alt="">
+                <img class="leader" src="images/leader-_1_1.png" data-earrings="true" data-glasses="false" data-hat="true"
+                    data-necklace="true" data-tattoo="false" data-hair="black" alt="">
+                <img class="leader" src="images/leader-_1_2.png" data-earrings="true" data-glasses="false" data-hat="true"
+                    data-necklace="true" data-tattoo="false" data-hair="blonde" alt="">
+                <img class="leader" src="images/leader-_1_3.png" data-earrings="true" data-glasses="false" data-hat="true"
+                    data-necklace="true" data-tattoo="false" data-hair="blonde" alt="">
+                <img class="leader" src="images/leader-_1_4.png" data-earrings="true" data-glasses="false" data-hat="true"
+                    data-necklace="true" data-tattoo="false" data-hair="brown" alt="">
+                <img class="leader" src="images/leader-_1_5.png" data-earrings="true" data-glasses="false" data-hat="true"
+                    data-necklace="true" data-tattoo="false" data-hair="brown" alt="">
+                <img class="leader" src="images/leader-_1_6.png" data-earrings="true" data-glasses="false" data-hat="true"
+                    data-necklace="true" data-tattoo="false" data-hair="gray" alt="">
+                <img class="leader" src="images/leader-_1_7.png" data-earrings="true" data-glasses="false" data-hat="true"
+                    data-necklace="true" data-tattoo="false" data-hair="gray" alt="">
+                <img class="leader" src="images/leader-_1_8.png" data-earrings="true" data-glasses="false" data-hat="true"
+                    data-necklace="true" data-tattoo="false" data-hair="bald" alt="">
+                <img class="leader" src="images/leader-_1_9.png" data-earrings="true" data-glasses="false" data-hat="true"
+                    data-necklace="true" data-tattoo="false" data-hair="bald" alt="">
+                <img class="leader" src="images/leader-_1_10.png" data-earrings="true" data-glasses="false" data-hat="true"
+                    data-necklace="true" data-tattoo="false" data-hair="red" alt="">
+                <img class="leader" src="images/leader-_1_11.png" data-earrings="true" data-glasses="false" data-hat="true"
+                    data-necklace="true" data-tattoo="false" data-hair="red" alt="">
+
+                <img class="leader" src="images/leader-_2_0.png" data-earrings="false" data-glasses="true" data-hat="true"
+                    data-necklace="false" data-tattoo="true" data-hair="black" alt="">
+                <img class="leader" src="images/leader-_2_1.png" data-earrings="false" data-glasses="true" data-hat="true"
+                    data-necklace="false" data-tattoo="true" data-hair="black" alt="">
+                <img class="leader" src="images/leader-_2_2.png" data-earrings="false" data-glasses="true" data-hat="true"
+                    data-necklace="false" data-tattoo="true" data-hair="blonde" alt="">
+                <img class="leader" src="images/leader-_2_3.png" data-earrings="false" data-glasses="true" data-hat="true"
+                    data-necklace="false" data-tattoo="true" data-hair="blonde" alt="">
+                <img class="leader" src="images/leader-_2_4.png" data-earrings="false" data-glasses="true" data-hat="true"
+                    data-necklace="false" data-tattoo="true" data-hair="brown" alt="">
+                <img class="leader" src="images/leader-_2_5.png" data-earrings="false" data-glasses="true" data-hat="true"
+                    data-necklace="false" data-tattoo="true" data-hair="brown" alt="">
+                <img class="leader" src="images/leader-_2_6.png" data-earrings="false" data-glasses="true" data-hat="true"
+                    data-necklace="false" data-tattoo="true" data-hair="gray" alt="">
+                <img class="leader" src="images/leader-_2_7.png" data-earrings="false" data-glasses="true" data-hat="true"
+                    data-necklace="false" data-tattoo="true" data-hair="gray" alt="">
+                <img class="leader" src="images/leader-_2_8.png" data-earrings="false" data-glasses="true" data-hat="true"
+                    data-necklace="false" data-tattoo="true" data-hair="bald" alt="">
+                <img class="leader" src="images/leader-_2_9.png" data-earrings="false" data-glasses="true" data-hat="true"
+                    data-necklace="false" data-tattoo="true" data-hair="bald" alt="">
+                <img class="leader" src="images/leader-_2_10.png" data-earrings="false" data-glasses="true" data-hat="true"
+                    data-necklace="false" data-tattoo="true" data-hair="red" alt="">
+                <img class="leader" src="images/leader-_2_11.png" data-earrings="false" data-glasses="true" data-hat="true"
+                    data-necklace="false" data-tattoo="true" data-hair="red" alt="">
+
+                <img class="leader" src="images/leader-_3_0.png" data-earrings="false" data-glasses="false" data-hat="true"
+                    data-necklace="true" data-tattoo="true" data-hair="black" alt="">
+                <img class="leader" src="images/leader-_3_1.png" data-earrings="false" data-glasses="false" data-hat="true"
+                    data-necklace="true" data-tattoo="true" data-hair="black" alt="">
+                <img class="leader" src="images/leader-_3_2.png" data-earrings="false" data-glasses="false" data-hat="true"
+                    data-necklace="true" data-tattoo="true" data-hair="blonde" alt="">
+                <img class="leader" src="images/leader-_3_3.png" data-earrings="false" data-glasses="false" data-hat="true"
+                    data-necklace="true" data-tattoo="true" data-hair="blonde" alt="">
+                <img class="leader" src="images/leader-_3_4.png" data-earrings="false" data-glasses="false" data-hat="true"
+                    data-necklace="true" data-tattoo="true" data-hair="brown" alt="">
+                <img class="leader" src="images/leader-_3_5.png" data-earrings="false" data-glasses="false" data-hat="true"
+                    data-necklace="true" data-tattoo="true" data-hair="brown" alt="">
+                <img class="leader" src="images/leader-_3_6.png" data-earrings="false" data-glasses="false" data-hat="true"
+                    data-necklace="true" data-tattoo="true" data-hair="gray" alt="">
+                <img class="leader" src="images/leader-_3_7.png" data-earrings="false" data-glasses="false" data-hat="true"
+                    data-necklace="true" data-tattoo="true" data-hair="gray" alt="">
+                <img class="leader" src="images/leader-_3_8.png" data-earrings="false" data-glasses="false" data-hat="true"
+                    data-necklace="true" data-tattoo="true" data-hair="bald" alt="">
+                <img class="leader" src="images/leader-_3_9.png" data-earrings="false" data-glasses="false" data-hat="true"
+                    data-necklace="true" data-tattoo="true" data-hair="bald" alt="">
+                <img class="leader" src="images/leader-_3_10.png" data-earrings="false" data-glasses="false" data-hat="true"
+                    data-necklace="true" data-tattoo="true" data-hair="red" alt="">
+                <img class="leader" src="images/leader-_3_11.png" data-earrings="false" data-glasses="false" data-hat="true"
+                    data-necklace="true" data-tattoo="true" data-hair="red" alt="">
+
+                <img class="leader" src="images/leader-_4_0.png" data-earrings="true" data-glasses="true" data-hat="true"
+                    data-necklace="false" data-tattoo="true" data-hair="black" alt="">
+                <img class="leader" src="images/leader-_4_1.png" data-earrings="true" data-glasses="true" data-hat="true"
+                    data-necklace="false" data-tattoo="true" data-hair="black" alt="">
+                <img class="leader" src="images/leader-_4_2.png" data-earrings="true" data-glasses="true" data-hat="true"
+                    data-necklace="false" data-tattoo="true" data-hair="blonde" alt="">
+                <img class="leader" src="images/leader-_4_3.png" data-earrings="true" data-glasses="true" data-hat="true"
+                    data-necklace="false" data-tattoo="true" data-hair="blonde" alt="">
+                <img class="leader" src="images/leader-_4_4.png" data-earrings="true" data-glasses="true" data-hat="true"
+                    data-necklace="false" data-tattoo="true" data-hair="brown" alt="">
+                <img class="leader" src="images/leader-_4_5.png" data-earrings="true" data-glasses="true" data-hat="true"
+                    data-necklace="false" data-tattoo="true" data-hair="brown" alt="">
+                <img class="leader" src="images/leader-_4_6.png" data-earrings="true" data-glasses="true" data-hat="true"
+                    data-necklace="false" data-tattoo="true" data-hair="gray" alt="">
+                <img class="leader" src="images/leader-_4_7.png" data-earrings="true" data-glasses="true" data-hat="true"
+                    data-necklace="false" data-tattoo="true" data-hair="gray" alt="">
+                <img class="leader" src="images/leader-_4_8.png" data-earrings="true" data-glasses="true" data-hat="true"
+                    data-necklace="false" data-tattoo="true" data-hair="bald" alt="">
+                <img class="leader" src="images/leader-_4_9.png" data-earrings="true" data-glasses="true" data-hat="true"
+                    data-necklace="false" data-tattoo="true" data-hair="bald" alt="">
+                <img class="leader" src="images/leader-_4_10.png" data-earrings="true" data-glasses="true" data-hat="true"
+                    data-necklace="false" data-tattoo="true" data-hair="red" alt="">
+                <img class="leader" src="images/leader-_4_11.png" data-earrings="true" data-glasses="true" data-hat="true"
+                    data-necklace="false" data-tattoo="true" data-hair="red" alt="">
+
+                <img class="leader" src="images/leader-_5_0.png" data-earrings="true" data-glasses="true" data-hat="false"
+                    data-necklace="true" data-tattoo="true" data-hair="black" alt="">
+                <img class="leader" src="images/leader-_5_1.png" data-earrings="true" data-glasses="true" data-hat="false"
+                    data-necklace="true" data-tattoo="true" data-hair="black" alt="">
+                <img class="leader" src="images/leader-_5_2.png" data-earrings="true" data-glasses="true" data-hat="false"
+                    data-necklace="true" data-tattoo="true" data-hair="blonde" alt="">
+                <img class="leader" src="images/leader-_5_3.png" data-earrings="true" data-glasses="true" data-hat="false"
+                    data-necklace="true" data-tattoo="true" data-hair="blonde" alt="">
+                <img class="leader" src="images/leader-_5_4.png" data-earrings="true" data-glasses="true" data-hat="false"
+                    data-necklace="true" data-tattoo="true" data-hair="brown" alt="">
+                <img class="leader" src="images/leader-_5_5.png" data-earrings="true" data-glasses="true" data-hat="false"
+                    data-necklace="true" data-tattoo="true" data-hair="brown" alt="">
+                <img class="leader" src="images/leader-_5_6.png" data-earrings="true" data-glasses="true" data-hat="false"
+                    data-necklace="true" data-tattoo="true" data-hair="gray" alt="">
+                <img class="leader" src="images/leader-_5_7.png" data-earrings="true" data-glasses="true" data-hat="false"
+                    data-necklace="true" data-tattoo="true" data-hair="gray" alt="">
+                <img class="leader" src="images/leader-_5_8.png" data-earrings="true" data-glasses="true" data-hat="false"
+                    data-necklace="true" data-tattoo="true" data-hair="bald" alt="">
+                <img class="leader" src="images/leader-_5_9.png" data-earrings="true" data-glasses="true" data-hat="false"
+                    data-necklace="true" data-tattoo="true" data-hair="bald" alt="">
+                <img class="leader" src="images/leader-_5_10.png" data-earrings="true" data-glasses="true" data-hat="false"
+                    data-necklace="true" data-tattoo="true" data-hair="red" alt="">
+                <img class="leader" src="images/leader-_5_11.png" data-earrings="true" data-glasses="true" data-hat="false"
+                    data-necklace="true" data-tattoo="true" data-hair="red" alt="">
+            </section>
+        </div>
+    </div>
+    <script>
+        function update() {
+            var earrings = document.getElementById("earrings").checked;
+            var glasses = document.getElementById("glasses").checked;
+            var hat = document.getElementById("hat").checked;
+            var necklace = document.getElementById("necklace").checked;
+            var tattoo = document.getElementById("tattoo").checked;
+            var hair = document.querySelector('input[name="toggle_option"]:checked').id;
+            var image_ids = document.getElementsByClassName("leader");
+            for (var i = 0; i < image_ids.length; i++) {
+                var image = image_ids[i];
+                var earrings_match = image.getAttribute("data-earrings") == "true" || earrings == false;
+                var glasses_match = image.getAttribute("data-glasses") == "true" || glasses == false;
+                var hat_match = image.getAttribute("data-hat") == "true" || hat == false;
+                var necklace_match = image.getAttribute("data-necklace") == "true" || necklace == false;
+                var tattoo_match = image.getAttribute("data-tattoo") == "true" || tattoo == false;
+                var hair_match = image.getAttribute("data-hair") == hair || hair == "any";
+                if (earrings_match && glasses_match && hat_match && necklace_match && tattoo_match && hair_match) {
+                    image.style.display = "block";
+                } else {
+                    image.style.display = "none";
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
