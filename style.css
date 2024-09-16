@@ -11,6 +11,10 @@ body {
     overflow-x: hidden;
 }
 
+a:visited {
+    color: darkgoldenrod;
+}
+
 a:link {
     color: lightseagreen;
 }
@@ -23,8 +27,12 @@ a:active {
     color: goldenrod;
 }
 
-.custom a:visited,a:link,a:hover,a:active,a:visited {
+a.custom:link, a.custom:active, a.custom:visited {
     color: white;
+}
+
+a.custom:hover {
+    color: lightskyblue;
 }
 
 .iceland-regular {
