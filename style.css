@@ -7,8 +7,8 @@ body {
     background-size: 100%;
     background-position: fixed;
     background-attachment: fixed;
-    overflow-y: scroll;
-    overflow-x: hidden;
+    scrollbar-gutter: stable both-edges;
+    overflow: auto;
 }
 
 a:visited {
@@ -27,7 +27,9 @@ a:active {
     color: goldenrod;
 }
 
-a.custom:link, a.custom:active, a.custom:visited {
+a.custom:link,
+a.custom:active,
+a.custom:visited {
     color: white;
 }
 
@@ -369,4 +371,18 @@ input:checked+.slider:before {
     content: " ";
     flex-grow: 1000000000;
     background: var(--last-row-background);
+}
+
+@media only screen and (max-device-width: 800px) {
+    .leader {
+        width: 24%;
+    }
+
+    .container {
+        padding: .5em 1em;
+    }
+
+    .container2 {
+        padding: .5em 1em;
+    }
 }
