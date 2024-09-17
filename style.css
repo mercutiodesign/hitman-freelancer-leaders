@@ -64,10 +64,12 @@ a.custom:hover {
 
 .toggle-row {
     width: 64em;
+    max-width: 90%;
 }
 
 .toggle-row2 {
     width: 64em;
+    max-width: 90%;
 }
 
 .toggle-container {
@@ -125,7 +127,7 @@ a.custom:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 22%;
+    width: 19%;
 }
 
 .icon {
