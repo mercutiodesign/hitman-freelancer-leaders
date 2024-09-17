@@ -42,7 +42,7 @@ a.custom:hover {
 }
 
 .wrapper {
-    margin: 10px 0;
+    margin: .75em 0;
 }
 
 .content-row {
@@ -98,21 +98,21 @@ a.custom:hover {
 .logo-centered {
     font-family: "Iceland", sans-serif;
     font-weight: 500;
-    font-size: 70px;
+    font-size: 5em;
     text-align: center;
     vertical-align: middle;
-    letter-spacing: 25.5px;
-    text-shadow: 2px 3px 1px black;
-    line-height: 80px;
+    letter-spacing: .35em;
+    text-shadow: .025em .075em .025em black;
+    line-height: 1.1em;
 }
 
 .logo-bracket {
     font-family: "Iceland", sans-serif;
     font-weight: 100;
-    font-size: 128px;
+    font-size: 1.8em;
     text-align: center;
     vertical-align: bottom;
-    text-shadow: 2px 3px 1px black;
+    text-shadow: .025em .075em .025em black;
 }
 
 .logo-hitman {
@@ -125,14 +125,14 @@ a.custom:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 300px;
+    width: 22%;
 }
 
 .icon {
     position: relative;
     display: inline-block;
-    width: 50px;
-    height: 50px;
+    width: 3.5em;
+    height: 3.5em;
     padding-right: 1em;
     padding-left: 0em;
 }
@@ -141,8 +141,8 @@ a.custom:hover {
 .switch {
     position: relative;
     display: inline-block;
-    width: 60px;
-    height: 34px;
+    width: 4.3em;
+    height: 2.4em;
 }
 
 /* Hide default HTML checkbox */
@@ -155,8 +155,8 @@ a.custom:hover {
 /* The slider */
 .slider {
     position: absolute;
-    height: 34px;
-    width: 60px;
+    width: 4.3em;
+    height: 2.4em;
     cursor: pointer;
     top: 0;
     left: 0;
@@ -170,10 +170,10 @@ a.custom:hover {
 .slider:before {
     position: absolute;
     content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
+    height: 1.85em;
+    width: 1.85em;
+    left: .285em;
+    bottom: .285em;
     background-color: white;
     -webkit-transition: .4s;
     transition: .4s;
@@ -184,36 +184,36 @@ input:checked+.slider {
 }
 
 input:focus+.slider {
-    box-shadow: 0 0 1px #2196F3;
+    box-shadow: 0 0 .07em #2196F3;
 }
 
 input:checked+.slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
+    -webkit-transform: translateX(1.85em);
+    -ms-transform: translateX(1.85em);
+    transform: translateX(1.85em);
 }
 
 /* Rounded sliders */
 .slider.round {
-    border-radius: 34px;
+    border-radius: 2.4em;
 }
 
 .slider.round:before {
-    border-radius: 50px;
+    border-radius: 3.6em;
 }
 
 .toggle_radio {
     position: relative;
     background-color: #ccc;
-    margin: 4px auto;
+    margin: .285em auto;
     overflow: hidden;
     padding: 0 !important;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    border-radius: 50px;
+    -webkit-border-radius: 3.5em;
+    -moz-border-radius: 3.5em;
+    border-radius: 3.5em;
     position: relative;
-    height: 34px;
-    width: 728px;
+    height: 2.4em;
+    width: 52em;
 }
 
 .toggle_radio>* {
@@ -229,25 +229,25 @@ input:checked+.slider:before {
     font-weight: bolder;
     z-index: 0;
     display: block;
-    width: 97px;
-    height: 28px;
-    margin: 3px 3px;
-    -webkit-border-radius: 34px;
-    -moz-border-radius: 34px;
-    border-radius: 34px;
+    width: 4.6em;
+    height: 1.35em;
+    margin: .15em .15em;
+    -webkit-border-radius: 2.4em;
+    -moz-border-radius: 2.4em;
+    border-radius: 2.4em;
     cursor: pointer;
     z-index: 1;
     text-align: center;
 }
 
 .toggle_option_slider {
-    width: 100px;
-    height: 26px;
+    width: 7.15em;
+    height: 1.85em;
     position: absolute;
-    top: 4px;
-    -webkit-border-radius: 34px;
-    -moz-border-radius: 34px;
-    border-radius: 34px;
+    top: .285em;
+    -webkit-border-radius: 2.4em;
+    -moz-border-radius: 2.4em;
+    border-radius: 2.4em;
     -webkit-transition: all .4s ease;
     -moz-transition: all .4s ease;
     -o-transition: all .4s ease;
@@ -256,82 +256,82 @@ input:checked+.slider:before {
 }
 
 .label {
-    width: 100px;
+    width: 7.15em;
 }
 
 .label_any {
     color: white;
-    text-shadow: black 1px 0 10px;
+    text-shadow: black .07em 0 .7em;
 }
 
 .label_black {
     color: #3d3d3d;
-    text-shadow: #676767 1px 0 10px;
+    text-shadow: #676767 .07em 0 .7em;
 }
 
 .label_blonde {
     color: #fed883;
-    text-shadow: black 1px 0 10px;
+    text-shadow: black .07em 0 .7em;
 }
 
 .label_brown {
     color: #7f3201;
-    text-shadow: #014e7f 1px 0 10px;
+    text-shadow: #014e7f .07em 0 .7em;
 }
 
 .label_gray {
     color: #808080;
-    text-shadow: white 1px 0 10px;
+    text-shadow: white .07em 0 .7em;
 }
 
 .label_red {
     color: #ff6a01;
-    text-shadow: #0196ff 1px 0 10px;
+    text-shadow: #0196ff .07em 0 .7em;
 }
 
 .label_bald {
     color: white;
-    text-shadow: black 1px 0 10px;
+    text-shadow: black .07em 0 .7em;
 }
 
 #any:checked~.toggle_option_slider {
     background: white;
-    left: 4px;
+    left: .285em;
 }
 
 #black:checked~.toggle_option_slider {
     background: #3d3d3d;
-    left: 104px;
+    left: 7.4em;
 }
 
 #blonde:checked~.toggle_option_slider {
     background: #fed883;
-    left: 208px;
+    left: 14.8em;
 }
 
 #brown:checked~.toggle_option_slider {
     background: #7f3201;
-    left: 312px;
+    left: 22.2em;
 }
 
 #gray:checked~.toggle_option_slider {
     background: #808080;
-    left: 416px;
+    left: 29.6em;
 }
 
 #red:checked~.toggle_option_slider {
     background: #ff6a01;
-    left: 520px;
+    left: 37em;
 }
 
 #bald:checked~.toggle_option_slider {
     background: white;
-    left: 624px;
+    left: 44.4em;
 }
 
 .justified-grid-gallery {
-    --space: 4px;
-    --min-height: 190px;
+    --space: .285em;
+    --min-height: 13.5em;
 }
 
 .justified-grid-gallery {
