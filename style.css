@@ -8,7 +8,7 @@ body {
     background-position: fixed;
     background-attachment: fixed;
     scrollbar-gutter: stable both-edges;
-    overflow: auto;
+    overflow: scroll;
 }
 
 a:visited {
@@ -129,7 +129,8 @@ a.custom:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 19%;
+    min-width: 22em;
+    width: 22em;
 }
 
 .icon {
@@ -350,9 +351,9 @@ input:checked+.slider:before {
 }
 
 .justified-grid-gallery>* {
-    flex-grow: calc(var(--width) * (100000 / var(--height)));
-    flex-basis: calc(var(--min-height) * (var(--width) / var(--height)));
-    aspect-ratio: var(--width) / var(--height);
+    /* flex-grow: calc(var(--width) * (100000 / var(--height))); */
+    /* flex-basis: calc(var(--min-height) * (var(--width) / var(--height))); */
+    /* aspect-ratio: var(--width) / var(--height); */
     position: relative;
     overflow: hidden;
     margin: 0 !important;
@@ -375,7 +376,8 @@ input:checked+.slider:before {
 
 @media only screen and (max-device-width: 800px) {
     .leader {
-        width: 24%;
+        min-width: 22em;
+        width: 22em;
     }
 
     .container {
