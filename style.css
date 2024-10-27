@@ -387,4 +387,44 @@ input:checked+.slider:before {
     .container2 {
         padding: .5em 1em;
     }
+
+    .toggle_radio {
+        width: 43.25em;
+    }
+
+    .toggle_radio label {
+        width: 3.75em;
+    }
+
+    .toggle_option_slider {
+        width: 5.75em;
+    }
+
+    #any:checked~.toggle_option_slider {
+        left: .285em;
+    }
+
+    #black:checked~.toggle_option_slider {
+        left: 6.285em;
+    }
+
+    #blonde:checked~.toggle_option_slider {
+        left: 12.285em;
+    }
+
+    #brown:checked~.toggle_option_slider {
+        left: 18.285em;
+    }
+
+    #gray:checked~.toggle_option_slider {
+        left: 24.285em;
+    }
+
+    #red:checked~.toggle_option_slider {
+        left: 30.285em;
+    }
+
+    #bald:checked~.toggle_option_slider {
+        left: 36.285em;
+    }
 }
