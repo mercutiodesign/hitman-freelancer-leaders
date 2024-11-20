@@ -1,5 +1,5 @@
 html {
-    font-size: 14px;
+    font-size: 16px;
 }
 
 body {
@@ -60,7 +60,7 @@ a.custom:hover {
 .container {
     position: relative;
     margin: auto;
-    padding: .5em 2em;
+    padding: .5em 1em;
     align-items: center;
     align-content: center;
     vertical-align: middle;
@@ -222,7 +222,7 @@ input:checked+.slider:before {
     border-radius: 3.5em;
     position: relative;
     height: 2.4em;
-    width: 52em;
+    width: 43.25em;
 }
 
 .toggle_radio>* {
@@ -238,7 +238,7 @@ input:checked+.slider:before {
     font-weight: bolder;
     z-index: 0;
     display: block;
-    width: 4.6em;
+    width: 3.75em;
     height: 1.35em;
     margin: .15em .15em;
     -webkit-border-radius: 2.4em;
@@ -250,7 +250,7 @@ input:checked+.slider:before {
 }
 
 .toggle_option_slider {
-    width: 7.15em;
+    width: 5.75em;
     height: 1.85em;
     position: absolute;
     top: .285em;
@@ -310,32 +310,32 @@ input:checked+.slider:before {
 
 #black:checked~.toggle_option_slider {
     background: #3d3d3d;
-    left: 7.4em;
+    left: 6.285em;
 }
 
 #blonde:checked~.toggle_option_slider {
     background: #fed883;
-    left: 14.8em;
+    left: 12.285em;
 }
 
 #brown:checked~.toggle_option_slider {
     background: #7f3201;
-    left: 22.2em;
+    left: 18.285em;
 }
 
 #gray:checked~.toggle_option_slider {
     background: #808080;
-    left: 29.6em;
+    left: 24.285em;
 }
 
 #red:checked~.toggle_option_slider {
     background: #ff6a01;
-    left: 37em;
+    left: 30.285em;
 }
 
 #bald:checked~.toggle_option_slider {
     background: white;
-    left: 44.4em;
+    left: 36.285em;
 }
 
 .justified-grid-gallery {
@@ -376,59 +376,4 @@ input:checked+.slider:before {
     content: " ";
     flex-grow: 1000000000;
     background: var(--last-row-background);
-}
-
-@media only screen and (max-device-width: 800px) {
-    .leader {
-        min-width: 22em;
-        width: 22em;
-    }
-
-    .container {
-        padding: .5em 1em;
-    }
-
-    .container2 {
-        padding: .5em 1em;
-    }
-
-    .toggle_radio {
-        width: 43.25em;
-    }
-
-    .toggle_radio label {
-        width: 3.75em;
-    }
-
-    .toggle_option_slider {
-        width: 5.75em;
-    }
-
-    #any:checked~.toggle_option_slider {
-        left: .285em;
-    }
-
-    #black:checked~.toggle_option_slider {
-        left: 6.285em;
-    }
-
-    #blonde:checked~.toggle_option_slider {
-        left: 12.285em;
-    }
-
-    #brown:checked~.toggle_option_slider {
-        left: 18.285em;
-    }
-
-    #gray:checked~.toggle_option_slider {
-        left: 24.285em;
-    }
-
-    #red:checked~.toggle_option_slider {
-        left: 30.285em;
-    }
-
-    #bald:checked~.toggle_option_slider {
-        left: 36.285em;
-    }
 }
