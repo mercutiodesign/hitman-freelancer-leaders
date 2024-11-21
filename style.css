@@ -128,15 +128,6 @@ a.custom:hover {
     text-align: center;
 }
 
-.leader {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-width: 22em;
-    width: 22em;
-}
-
 .icon {
     position: relative;
     display: inline-block;
@@ -343,6 +334,16 @@ input:checked+.slider:before {
     --min-height: 13.5em;
 }
 
+.leader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* min-width: 22em; */
+    min-width: max(20em, calc((100% - 80em - var(--space)) / 2));
+    max-width: calc((100% - 2em - 3 * var(--space)) / 4);
+}
+
 .justified-grid-gallery {
     display: flex;
     flex-wrap: wrap;
@@ -399,11 +400,11 @@ input+.drop+div {
 }
 
 .drop:after {
-    content: '▼';
+    content: ' ▼';
 }
 
 :checked+.drop:after {
-    content: '▲';
+    content: ' ▲';
 }
 
 input:checked+.drop+div {
