@@ -222,7 +222,7 @@ input:checked+.slider:before {
     border-radius: 3.5em;
     position: relative;
     height: 2.4em;
-    width: 43.25em;
+    width: 42.75em;
 }
 
 .toggle_radio>* {
@@ -320,22 +320,22 @@ input:checked+.slider:before {
 
 #brown:checked~.toggle_option_slider {
     background: #7f3201;
-    left: 18.285em;
+    left: 18.385em;
 }
 
 #gray:checked~.toggle_option_slider {
     background: #808080;
-    left: 24.285em;
+    left: 24.585em;
 }
 
 #red:checked~.toggle_option_slider {
     background: #ff6a01;
-    left: 30.285em;
+    left: 30.585em;
 }
 
 #bald:checked~.toggle_option_slider {
     background: white;
-    left: 36.285em;
+    left: 36.585em;
 }
 
 .justified-grid-gallery {
@@ -376,4 +376,36 @@ input:checked+.slider:before {
     content: " ";
     flex-grow: 1000000000;
     background: var(--last-row-background);
+}
+
+.drop {
+    cursor: pointer;
+    display: block;
+    /* background: #090; */
+    text-align: right;
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    user-select: none;
+}
+
+input[type="checkbox"] {
+    display: none;
+    /* hide the checkboxes */
+}
+
+input+.drop+div {
+    display: none;
+}
+
+.drop:after {
+    content: '▼';
+}
+
+:checked+.drop:after {
+    content: '▲';
+}
+
+input:checked+.drop+div {
+    display: block;
 }
