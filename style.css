@@ -347,9 +347,8 @@ input:checked+.slider:before {
     cursor: pointer;
     display: block;
     text-align: right;
-    position: absolute;
-    right: 1em;
-    top: 1em;
+    margin-right: 1em;
+    margin-top: 1em;
     user-select: none;
 }
 
