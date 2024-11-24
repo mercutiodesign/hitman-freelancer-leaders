@@ -5,7 +5,7 @@ html {
 body {
     background-color: #0a0d15;
     color: white;
-    margin: 2em auto;
+    margin: 0 auto;
     background-image: url('images/freelancer.jpeg');
     background-repeat: no-repeat;
     background-size: 100%;
@@ -48,19 +48,18 @@ a.custom:hover {
 }
 
 .wrapper {
-    margin: .75em 0;
+    margin: 0;
 }
 
 .content-row {
     margin: auto;
-    align-items: center;
     display: block;
 }
 
 .container {
     position: relative;
     margin: auto;
-    padding: .5em 1em;
+    padding: .25em .75em;
     align-items: center;
     align-content: center;
     vertical-align: middle;
@@ -69,13 +68,13 @@ a.custom:hover {
 }
 
 .toggle-row {
-    width: 64em;
-    max-width: 90%;
+    width: 50em;
+    max-width: 100%;
 }
 
 .toggle-row2 {
-    width: 64em;
-    max-width: 90%;
+    width: 50em;
+    max-width: 100%;
 }
 
 .toggle-container {
@@ -85,22 +84,22 @@ a.custom:hover {
 .container2 {
     position: relative;
     margin: auto;
-    padding: .5em 1em;
+    padding: .25em .75em 1em 1em;
     align-items: center;
     align-content: center;
     vertical-align: middle;
     text-align: center;
     display: flex;
-    width: 84%;
+    width: 100vw - var(--scrollbar-width) - 2em;
 }
 
 .text-center {
     position: relative;
-    padding: 1em 0em;
-    align-items: center;
+    padding: .25em 0em;
     text-align: center;
     display: block;
     font-size: 140%;
+    line-height: 2em;
 }
 
 .logo-centered {
@@ -120,7 +119,7 @@ a.custom:hover {
     font-size: .75em;
     text-align: center;
     vertical-align: bottom;
-    /* text-shadow: .025em .075em .025em black; */
+    text-shadow: .025em .075em .025em black;
     display: inline-block;
     line-height: .7em;
 }
@@ -338,7 +337,7 @@ input:checked+.slider:before {
 
 .justified-grid-gallery {
     --space: .285em;
-    --min-height: 13.5em;
+    --min-height: 22em;
 }
 
 .leader {
@@ -346,7 +345,7 @@ input:checked+.slider:before {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: min(22em, calc((100% - 2em - 3 * var(--space)) / 4));
+    width: min(22em, calc((100vw - var(--scrollbar-width) - 2em - 4 * var(--space)) / 4));
 }
 
 .justified-grid-gallery {
@@ -354,22 +353,19 @@ input:checked+.slider:before {
     flex-wrap: wrap;
     grid-gap: var(--space);
     list-style: none;
+    width: 100vw - var(--scrollbar-width) - 2em;
+    /* We use !important to avoid gaps in some environments. */
     margin: 0 !important;
     /* We use !important to avoid gaps in some environments. */
     padding: 0 !important;
-    /* We use !important to avoid gaps in some environments. */
 }
 
 .justified-grid-gallery>* {
-    /* flex-grow: calc(var(--width) * (100000 / var(--height))); */
-    /* flex-basis: calc(var(--min-height) * (var(--width) / var(--height))); */
-    /* aspect-ratio: var(--width) / var(--height); */
     position: relative;
-    overflow: hidden;
+    /* We use !important to avoid gaps in some environments. */
     margin: 0 !important;
     /* We use !important to avoid gaps in some environments. */
     padding: 0 !important;
-    /* We use !important to avoid gaps in some environments. */
 }
 
 .justified-grid-gallery>*>img {
@@ -385,7 +381,6 @@ input:checked+.slider:before {
 .drop {
     cursor: pointer;
     display: block;
-    /* background: #090; */
     text-align: right;
     position: absolute;
     right: 1em;
@@ -395,7 +390,6 @@ input:checked+.slider:before {
 
 input[type="checkbox"] {
     display: none;
-    /* hide the checkboxes */
 }
 
 input+.drop+div {
@@ -411,5 +405,9 @@ input+.drop+div {
 }
 
 input:checked+.drop+div {
+    display: block;
+}
+
+.collapsible {
     display: block;
 }
