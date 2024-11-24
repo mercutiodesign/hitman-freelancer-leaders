@@ -8,8 +8,7 @@ body {
     margin: 0 auto;
     background-image: url('images/freelancer.jpeg');
     background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: fixed;
+    background-size: cover;
     background-attachment: fixed;
     scrollbar-gutter: stable both-edges;
     overflow: scroll;
@@ -85,12 +84,7 @@ a.custom:hover {
     position: relative;
     margin: auto;
     padding: .25em .75em 1em 1em;
-    align-items: center;
     align-content: center;
-    vertical-align: middle;
-    text-align: center;
-    display: flex;
-    width: 100vw - var(--scrollbar-width) - 2em;
 }
 
 .text-center {
@@ -210,7 +204,6 @@ input:checked+.slider:before {
     overflow: hidden;
     padding: 0 !important;
     -webkit-border-radius: 3.5em;
-    -moz-border-radius: 3.5em;
     border-radius: 3.5em;
     position: relative;
     height: 2.4em;
@@ -234,7 +227,6 @@ input:checked+.slider:before {
     height: 1.35em;
     margin: .15em .15em;
     -webkit-border-radius: 2.4em;
-    -moz-border-radius: 2.4em;
     border-radius: 2.4em;
     cursor: pointer;
     z-index: 1;
@@ -247,10 +239,8 @@ input:checked+.slider:before {
     position: absolute;
     top: .285em;
     -webkit-border-radius: 2.4em;
-    -moz-border-radius: 2.4em;
     border-radius: 2.4em;
     -webkit-transition: all .4s ease;
-    -moz-transition: all .4s ease;
     -o-transition: all .4s ease;
     -ms-transition: all .4s ease;
     transition: all .4s ease;
@@ -337,45 +327,20 @@ input:checked+.slider:before {
 
 .justified-grid-gallery {
     --space: .285em;
-    --min-height: 22em;
+    --max-canvas-width: calc(100vw - 2em - var(--scrollbar-width));
+    --leader-image-width: min(22em, calc((var(--max-canvas-width) - 4 * var(--space)) / 4));
 }
 
 .leader {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: min(22em, calc((100vw - var(--scrollbar-width) - 2em - 4 * var(--space)) / 4));
+    width: var(--leader-image-width);
 }
 
 .justified-grid-gallery {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, var(--leader-image-width));
     grid-gap: var(--space);
-    list-style: none;
-    width: 100vw - var(--scrollbar-width) - 2em;
-    /* We use !important to avoid gaps in some environments. */
-    margin: 0 !important;
-    /* We use !important to avoid gaps in some environments. */
-    padding: 0 !important;
-}
-
-.justified-grid-gallery>* {
-    position: relative;
-    /* We use !important to avoid gaps in some environments. */
-    margin: 0 !important;
-    /* We use !important to avoid gaps in some environments. */
-    padding: 0 !important;
-}
-
-.justified-grid-gallery>*>img {
-    position: absolute;
-}
-
-.justified-grid-gallery::after {
-    content: " ";
-    flex-grow: 1000000000;
-    background: var(--last-row-background);
+    align-items: center;
+    justify-content: center;
 }
 
 .drop {
