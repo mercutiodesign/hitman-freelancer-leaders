@@ -332,15 +332,20 @@ input:checked+.slider:before {
 }
 
 .leader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: var(--leader-image-width);
 }
 
 .justified-grid-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, var(--leader-image-width));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     grid-gap: var(--space);
     align-items: center;
     justify-content: center;
+    width: var(--max-canvas-width);
 }
 
 .drop {
