@@ -20,9 +20,11 @@ function update() {
         var tattoo_match = image.getAttribute("data-tattoo") == "true" || tattoo == false;
         var hair_match = image.getAttribute("data-hair") == hair || hair == "any";
         if (earrings_match && glasses_match && hat_match && necklace_match && tattoo_match && hair_match) {
-            image.style.display = "block";
+            // image.style.display = "flex";
+            image.style = "width: var(--leader-image-width); margin: var(--space);";
         } else {
-            image.style.display = "none";
+            // image.style.display = "none";
+            image.style = "width: 0; margin: 0;";
         }
     }
 }
